@@ -2,7 +2,19 @@
 
 <h5>Ingredients</h5>
 
-<li> @cocktail.ingredient.each </li>
+<ul>
+    <% @cocktail.doses.each do |dose|  %>
+      <li> <%= dose.ingredient.name %> of <%=dose.description %>   </li>
+    <% end %>
+</ul>
+<!--  -->
+<%= simple_form_for [@cocktail, @dose] do |f| %>
+  <%= f.association :ingredient %>
+  <%= f.input :description %>
+  <%= f.button :submit %>
+<% end %>
+
 
 
 <%= link_to "Main Menu", cocktails_path %>
+
