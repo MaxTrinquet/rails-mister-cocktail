@@ -3,7 +3,7 @@
 
 
 .container-banner{
-  padding-top: 60px 0;
+  padding-top: 20px;
 }
 
 
@@ -11,21 +11,64 @@
   background-size: cover;
   background-position: center;
   padding: 20px 0;
-  height:650px;
+  height:800px;
 }
 
 .banner h1 {
   margin: 40px;
   color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 32px;
+  font-size: 64px;
   font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
 }
 
 .banner p {
   margin: 40px;
-  font-size: 20px;
   color: white;
-  opacity: .7;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+
+body{
+  background: #000;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.neonshadow{
+    color: #FFFFFF;
+    text-shadow:
+    0 0 5px #FFFFFF,
+    0 0 10px #FFFFFF,
+    0 0 20px #FFFFFF,
+    0 0 40px #FF00DE,
+    0 0 80px #FF00DE,
+    0 0 90px #FF00DE,
+    0 0 100px #FF00DE,
+    0 0 150px #FF00DE;
+}
+
+h1.red{
+   color: #FFFFFF;
+    text-shadow:
+    0 0 5px #FFFFFF,
+    0 0 10px #FFFFFF,
+    0 0 20px #FFFFFF,
+    0 0 40px #FF00DE,
+    0 0 80px #FF00DE,
+    0 0 90px #FF00DE,
+    0 0 100px #FF00DE,
+    0 0 150px #FF00DE;
 }
