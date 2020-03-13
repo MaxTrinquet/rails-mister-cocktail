@@ -4,14 +4,16 @@
     <p>Please have a sit. </p>
 
     <div class= "btn btn-ghost">
-        <% link_to new_cocktail_path do %>
-          <%= content_tag :span, "Order Here", :class => "h3 first" %>
+        <%= link_to new_cocktail_path do %>
+          <h3 class="order-here first">
+            ORDER HERE
+          </h3>
+          <%#= content_tag :span, "Order Here", :class => "h3 first" %>
         <% end %>
       </div>
 
   </div>
 </div>
-
 
 
 
@@ -30,10 +32,3 @@
     <% end %>
   </div>
 </div>
-
-
-
-
-
-<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-

@@ -1,35 +1,47 @@
 
 .btn-ghost {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 300px;
-  height: 100px;
+  top: 90%;
+  left: 90%;
+  width: 250px;
+  height: 80px;
   margin: -50px 0 0 -150px;
   text-align: center;
   border-radius: 8px;
   border: 3px solid rgb(0, 40, 70);
   cursor: pointer;
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+
 }
 
 .btn-ghost:hover {
   animation: border-flicker 2s linear forwards;
+  text-decoration: none;
+}
+.order-here:hover{
+text-decoration: none;
 }
 
-h3 {
-  font-family: "Open Sans";
+
+h3.order-here {
   font-weight: 300;
-  font-size:2.9em;
   margin: 15px 0 0;
   color: rgba(120, 0, 50, .5);
+  animation: text-flicker 2s linear forwards;
+
 }
 
 .btn-ghost:hover h3 {
   animation: text-flicker 2s linear forwards;
+  text-decoration: none;
 }
 
 .btn-ghost:hover .first {
   animation: letter-flicker 3s linear infinite;
+  text-decoration: none;
 }
 
 @keyframes text-flicker {
